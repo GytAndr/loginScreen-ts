@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { RootState } from "../../app/store";
+import { RootState } from "../../store/store";
 import emailValidator from "../../helpers/emailValidator";
 import userAuth from "../../helpers/userAuth";
 import {

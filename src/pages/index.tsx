@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import Profile from "../components/Profile";
 import Login from "../components/Login";
-import { RootState } from "../app/store";
+import { RootState } from "../store/store";
 import { useEffect } from "react";
 import { onLogin } from "../redux/loginSlice";
 import userAuth from "../helpers/userAuth";
