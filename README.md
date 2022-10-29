@@ -1,5 +1,6 @@
 ## Description
 Live preview: https://login-scree-seems-neat-itaxgaipp-gytandr.vercel.app/
+
 Project was made as part of SeemsNeat test assignment.
 Login form takes email and password, checks for input validity, makes fake authorization call, and lastly caches user credentials in LocalStorage for later session.
 
