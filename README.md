@@ -20,4 +20,5 @@ Login form takes email and password, checks for input validity, makes fake autho
 - Next.js
 - React.js
 - TypeScript
+- Redux
 - SASS
