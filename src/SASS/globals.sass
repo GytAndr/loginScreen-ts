@@ -1,0 +1,21 @@
+@use './typography'
+@use './colors'
+@use './reset'
+
+@use './containers'
+@use './components/Login'
+@use './components/Profile'
+
+html
+  font-family: typography.$PT-sans
+  background-color: colors.$bg-blue
+  color: colors.$text-white
+
+body
+  background-image: url(/images/topLeft.png), url(/images/bottomLeft.png),url(/images/bottomRight.png)
+  background-position: top left, bottom left, bottom right
+  background-repeat: no-repeat,no-repeat,no-repeat
+  background-size: 24%,18%,36%
+@media only screen and (max-width: 600px)
+  body
+    background-size: 50%,30%,59%

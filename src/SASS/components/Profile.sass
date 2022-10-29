@@ -1,0 +1,13 @@
+@use '../colors'
+.profile
+  display: flex
+  flex-direction: column
+  align-items: center
+  font-size: 24px
+  &__success
+    margin-bottom: 16px
+  &__userName
+    color: colors.$success-green
+@media only screen and (max-width: 600px)
+  .profile
+    font-size: 16px

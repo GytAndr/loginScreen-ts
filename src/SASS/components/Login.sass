@@ -1,0 +1,76 @@
+@use '../colors'
+@use '../typography'
+
+.login
+  display: flex
+  flex-direction: column
+  align-items: center
+  &__title
+    @extend .login
+    margin-bottom: 32px
+    &-header
+      font-size: 48px
+      margin-bottom: 6px
+    &-message
+      font-size: 18px
+  &__inputs
+    @extend .login
+    margin-bottom: 32px
+    &-email, &-password
+      border: colors.$text-white 1px solid
+      border-radius: 10px
+      background: transparent
+      font-family: typography.$PT-sans
+      color: colors.$text-white
+      outline: none
+      font-size: 19px
+      height: 50px
+      width: 434px
+      margin-bottom: 21px
+      text-indent: 64px
+    &-email::placeholder,&-password::placeholder
+      font-family: typography.$PT-sans
+      color: colors.$text-white
+    &-email
+      background-image: url(/images/person.png)
+      background-repeat: no-repeat
+      background-position: 16px
+    &-password
+      background-image: url(/images/password.png)
+      background-repeat: no-repeat
+      background-position: 16px
+    &-error
+      color: colors.$error-yellow
+      align-self: flex-start
+      margin-bottom: 8px
+      visibility: hidden
+
+  &__btn
+    border: colors.$success-green 2px solid
+    border-radius: 15px
+    background: transparent
+    font-family: typography.$PT-sans
+    color: colors.$success-green
+    font-size: 19px
+    height: 50px
+    width: 434px
+    cursor: pointer
+
+.active
+  visibility: visible
+
+@media only screen and (max-width: 600px)
+  .login
+    &__btn,&__inputs-email, &__inputs-password
+      width: 290px
+      font-size: 16px
+    &__title
+      margin-bottom: 24px
+      &-header
+        font-size: 32px
+      &-message
+        font-size: 16px
+    &__inputs
+      margin-bottom: 16px
+      &-email, &-password
+        margin-bottom: 21px
