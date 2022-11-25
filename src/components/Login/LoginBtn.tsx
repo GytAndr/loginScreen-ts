@@ -24,6 +24,10 @@ function LoginBtn() {
 			dispatch(setErrorMesage("Please enter valid email format"));
 			return;
 		}
+		if (password.trim() === "") {
+			dispatch(setErrorMesage("Password cannot be blank"));
+			return;
+		}
 		if (!userAuth(email, password)) {
 			dispatch(
 				setErrorMesage(
