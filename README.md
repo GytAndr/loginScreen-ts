@@ -22,3 +22,4 @@ Login form takes email and password, checks for input validity, makes fake autho
 - TypeScript
 - Redux
 - SASS
+- Cypress
